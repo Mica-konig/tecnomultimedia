@@ -4,8 +4,8 @@ class Mariposa {
   PImage [] imagenm = new PImage [4];
   float posicionx = width/2; 
   float posiciony = height/2; 
-  float tamano1; 
-  float tamano2; 
+  float tamanio1; 
+  float tamanio2; 
   float velX;
   int c;
 
@@ -13,8 +13,8 @@ class Mariposa {
   Mariposa (int posx, int posy, int ancho, int alto, float velx) { 
     posicionx = posx;
     posiciony = posy;
-    tamano1 = ancho; 
-    tamano2 = alto;
+    tamanio1 = ancho; 
+    tamanio2 = alto;
     velX=velx;
     
     imagenm [0]= loadImage("mariposa1.jpg");
@@ -24,7 +24,7 @@ class Mariposa {
   }
 
   void mostrar() {
-    image(imagenm[3], posicionx, posiciony, tamano1, tamano2);
+    image(imagenm[3], posicionx, posiciony, tamanio1, tamanio2);
   }
 
   void moverm() {
