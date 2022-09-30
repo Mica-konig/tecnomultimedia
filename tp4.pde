@@ -3,13 +3,11 @@
 
 //1) Clses:
 Parque p; //(principal)
-PImage parque;
 PImage mariposa1;
 PImage flor;
 
 void setup () {
   size(600, 600);
-  parque = loadImage("parque2.jpg");
   
 // 2) Constructor 
   p= new Parque (300,300, 600,600); 
