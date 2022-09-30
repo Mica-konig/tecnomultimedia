@@ -1,7 +1,7 @@
 
 class Mariposa {
 
-  PImage [] imagenp = new PImage [4];
+  PImage [] imagenm = new PImage [4];
   float posicionx = width/2; //Coordenada x
   float posiciony = height/2; //Coordenada y
   float tamano1; //Tamaño de la imagen
@@ -16,21 +16,21 @@ class Mariposa {
     tamano2 = alto;
     velX=velx;
     
-    imagenp [0]= loadImage("mariposa1.jpg");
-    imagenp [1]= loadImage("mariposa2.png");
-    imagenp [2]= loadImage("mariposa3.jpg");
-    imagenp [3]= loadImage("mariposa4.png");  
+    imagenm [0]= loadImage("mariposa1.jpg");
+    imagenm [1]= loadImage("mariposa2.png");
+    imagenm [2]= loadImage("mariposa3.jpg");
+    imagenm [3]= loadImage("mariposa4.png");  
   }
 
   void mostrar() {
-    image(imagenp[3], posicionx, posiciony, tamano1, tamano2);
+    image(imagenm[3], posicionx, posiciony, tamano1, tamano2);
   }
 
-  void mover() {
+  void moverm() {
     posicionx =posicionx+velX;
     if (posicionx >width ) {
       posicionx= 0;
-      posiciony=random(0, 200);
+      posiciony=random(20, 150);
     }
   }
 }
