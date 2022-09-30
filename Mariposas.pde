@@ -2,14 +2,15 @@
 class Mariposa {
 
   PImage [] imagenm = new PImage [4];
-  float posicionx = width/2; //Coordenada x
-  float posiciony = height/2; //Coordenada y
-  float tamano1; //Tamaño de la imagen
-  float tamano2; //Tamaño de la imagen
+  float posicionx = width/2; 
+  float posiciony = height/2; 
+  float tamano1; 
+  float tamano2; 
   float velX;
   int c;
 
-  Mariposa (int posx, int posy, int ancho, int alto, float velx) { //Constructor
+//Constructor
+  Mariposa (int posx, int posy, int ancho, int alto, float velx) { 
     posicionx = posx;
     posiciony = posy;
     tamano1 = ancho; 
